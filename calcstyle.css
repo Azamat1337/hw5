@@ -1,0 +1,80 @@
+.calc{
+    width: 300px;
+    margin: 50px auto;
+    height: 500px;
+    border: 1px solid #000 ;
+    border-radius: 20px;
+    background: #000;
+    color: #fff;
+    font-family: Arial;
+    padding: 18px;
+    box-shadow: 4px 4px 4px #4f4f4f ;
+
+}
+
+body{
+    margin: 0;
+    background-image: url("./applee.jpg");
+    background-size: 10cm;
+    background-size: cover;
+    background-position: center;
+}
+.btn{
+     width: 60px;
+     height: 60px;
+     background: #333;
+     border-radius: 50%;
+     text-align: center;
+     line-height: 60px;
+     font-size: 1.5rem;
+     cursor: pointer;
+     user-select: none;
+}
+.calc-screen{
+    height: 125px;
+    padding: 10px;
+    display: grid;
+    justify-items: end; 
+    align-items: end;
+    margin-bottom: 25 px;
+}
+
+.calc-screen p{
+    text-align: right;
+    font-size: 4rem;
+    margin: 0;
+}
+
+.buttons{
+    display: grid;
+    grid-template-areas:
+    "as p-m persent division"
+    "seven eight nine myltyply"
+    "four five six minus"
+    "one two three plus"
+    "zero zero dot equal"; 
+    grid-gap: 7px;
+    justify-items: center;
+}
+
+.btn.zero{
+    grid-area: zero;
+    width: 100%;
+    border-radius: 34px;
+}
+
+.btn:hover{
+    filter: brightness(120%);
+
+}
+
+.btn:active{
+    filter: brightness(90%);
+}
+
+.btn.bg-grey{
+    background: #a6a6a6;
+}
+.btn.by-orange{
+    background: #ff9501 ;
+}
